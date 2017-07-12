@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BootStrap</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<style type="text/css">
+		.my-btnstyle button{
+			width: 85px;
+			height: 50px;
+			border: none;
+			background-color: #f6f8f8;
+		}
+		.my-btnstyle .dropdown-menu img{
+			margin: 5px;
+		}
+		.my-btnstyle .dropdown-menu{
+			animation:.3s linear fadeIn;
+		}
+		@keyframes fadeIn{
+			0%{opacity: 0; transform:translateY(-20px);}
+			100%{opacity: 1;transform:translateY(0px);}
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="dropdown my-btnstyle">
+  		<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    		Plugins
+    	<span class="caret"></span>
+  		</button>
+  		<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		    <li>
+		        <a href="/categories/32/wordpress-plugins">
+		         	<img width="16" height="16" class="m-r-sm" alt="WordPress Plugins" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png">
+		         	<span>WordPress</span>
+		        </a>
+		    </li> 
+		    <li>
+		        <a href="/categories/32/wordpress-plugins">
+		         	<img width="16" height="16" class="m-r-sm" alt="WordPress Plugins" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png">
+		         	<span>WordPress</span>
+		        </a>
+		    </li> 
+		    <li>
+		        <a href="/categories/32/wordpress-plugins">
+		         	<img width="16" height="16" class="m-r-sm" alt="WordPress Plugins" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png">
+		         	<span>WordPress</span>
+		        </a>
+		    </li> 
+		    <li>
+		        <a href="/categories/32/wordpress-plugins">
+		         	<img width="16" height="16" class="m-r-sm" alt="WordPress Plugins" src="https://www.codester.com/static/uploads/categories/32/icon-alt.png">
+		         	<span>WordPress</span>
+		        </a>
+		    </li>  		
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+if(window.navigator.userAgent.toLowerCase().indexOf('mobile')==-1){
+	// $('.dropdown-toggle').on('mouseover',function(){
+	// 	alert(2)
+	// });
+	$('.dropdown-toggle').hover(function(){
+		$('.dropdown').addClass('open');
+	},function(){
+		$('.dropdown').removeClass('open')
+	})
+}
+</script>
+</body>
+</html>

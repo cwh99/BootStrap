@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BootStrap</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<style type="text/css">
+		.github-style{
+			font-weight: 700;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<input value="默认样式" class="btn"> 
+	<input value="首选项" class="btn btn-primary btn-lg"> 
+	<input value="成功" class="btn btn-success btn-md"> 
+	<input value="一般信息" class="btn btn-info btn-sm"> 
+	<input value="警告" class="btn btn-warnin btn-xs"> 
+	<input value="错误" class="btn btn-danger"> 
+	<!-- 按钮方式 -->
+	<button class="btn btn-primary">按钮 <span class="caret"></span></button>
+	<div class="btn-gruop dropdown">
+		<button href="#" class="btn btn-primary">按钮</button>	
+		<button href="#" class="btn btn-primary"><span class="caret"></span></button>	
+	</div>
+
+	<br><br>
+	<!-- 按钮组 的实现 垂直 水平-->
+	<div class="github-style">
+		<div class="btn-gruop btn-group-sm">
+			<button class="btn btn-default active"><span class="glyphicon glyphicon-eye-open"></span> Watch <span class="caret"></span></button>
+			<button class="btn btn-default">3,064</button>
+			<button class="btn btn-default active"><span class="glyphicon glyphicon-star"></span> Star <span class="caret"></span></button>
+			<button class="btn btn-default">39,064</button>
+			<button class="btn btn-default active"><span class="glyphicon glyphicon-star"></span> fork <span class="caret"></span></button>
+			<button class="btn btn-default">39,064</button>
+		</div>
+	</div>
+
+	<br><br>
+	<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li class="dropdown-header">第一部分</li>
+    <li class="active"><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li class="disabled"><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+    <!-- <li class="divider"></li> -->
+    <li class="dropdown-header">第一部分</li>
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+</div>
+</body>
+</html>
